@@ -1,0 +1,387 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanssc.css);
+
+      /* 整體區域 str */
+           
+           *{
+    
+                border:0;
+                margin:0;
+                padding:0;
+            }
+        /* 整體區域 end */
+
+
+        /* 上方區域 str */
+           
+
+        nav{
+
+            position: relative;
+            width:100%;
+            height:100px;
+            background:#323232;
+            top:0;
+            left:0;
+            z-index:-3;
+
+        }
+
+        #nav-bottom{
+
+            width:100%;
+            height:30px;
+            background:#e3e2db;
+        }
+
+        #logo img{
+
+            width:100px;
+            margin-left:150px;
+            margin-top:5px;
+        }
+
+        #logo h4{
+
+            color:rgb(255, 255, 255);
+            font-size:50px;
+            margin:-95px 0 0 260px;
+        }
+      
+
+        nav ul{
+
+            margin-left:40%;
+        
+        }
+
+        nav li{
+
+            float:left;
+            color:#fff;
+            font-size:16pt;
+            margin-left:30px;
+        }
+
+        /* 上方區域 end */
+
+
+        /* 右側滑動區域 str */
+
+        .slide-bar{
+
+            width:250px;
+            height:500px;
+            top:23%;
+            right:2%;
+            background:#e3e2db;
+            float:right;
+            position:fixed;
+            display:none;
+           
+         
+        }
+
+        .slide-bar h3{
+
+          text-align:center;
+          margin-top:20px;
+        }
+
+        .slide-bar ul{
+
+            list-style:none;
+        }
+
+        .slide-bar ul li img{
+
+            width:200px;
+             margin-left:25px;
+          position:absolute
+           
+        }
+        .slide-bar h4{
+
+            margin-top:250px;
+            text-align: center;
+        }
+        
+        .slide-bar select{
+
+            margin-top:20px;
+            margin-left:35%;
+
+          
+        }
+
+        #submit{
+
+            width:150px;
+            height:50px;
+            border-radius:0.5em;
+            font-size:15pt;
+            margin:40px  0  0  50px;
+            background:#bd2228;
+            color:#FFF;
+        }
+
+        #submit:hover{
+
+            cursor:pointer;
+            background:#ffffff;
+            color:rgb(0, 0, 0);
+        }
+
+
+          /* 右側區域 end */
+
+
+
+        /* 中間區域str */
+
+
+              /* 主要區塊 str */
+
+                #main-area{
+
+                    margin:0 auto;
+                    width:1000px;
+                    height:3000px;   
+
+                    display:block;
+                    z-index:-4;
+                }
+
+                /* 主要區塊 end */
+
+
+                        /* 中間幻燈片str */
+                            #slides{
+                    
+                                position: relative;
+                            
+                                z-index:-3;
+                    
+                            }
+                    
+                            #slides img{
+                                width:800px;
+                                margin:0 auto;
+                                margin-top:-450px;
+                                position: absolute;
+                                z-index:-2;
+                                display:block;
+                            
+                            }
+                    
+                            #slides img.top{
+                    
+                                z-index:-1;
+                    
+                    
+                            }
+
+                        /* 中間幻燈片 end */
+
+                        /* 文字簡介 str */
+
+                        #intro{
+
+                            width:100%;
+                            height:500px;
+                            position: relative;
+                            top:700px;
+                            background: #f6eff0;
+
+                        }
+
+                        #intro::after{
+
+                            content:" ";
+                         
+                            height:2px;
+                            display:block;
+                        }
+
+                      
+                     
+
+                       div section{
+
+                            margin:0 auto;
+                            position: absolute;
+                            width:800px;
+                            top:950px;
+                            font-size:18pt;
+                            line-height: 60px;
+                            font-family: 'Noto Sans SC', sans-serif;
+                          
+                        }
+
+                        .mountain{
+
+                            width:550px;
+                            margin-left:400px;
+                            margin-top:-200px;
+                        }
+
+                
+
+
+                        /* 文字簡介 end */
+
+                        /* 景點介紹大綱str */
+
+                        .view{
+
+
+                            top:900px;
+                            position:relative;
+
+
+
+                        }
+
+                        .view div{
+
+                            background: #e3e2db;
+                            width:800px;
+                            height:80px;
+                            font-size:20pt;
+                            border-radius: 1em;
+                        }
+
+                        .view h2{
+
+                            padding-left:30px;
+                            padding-top:10px;
+                        }
+
+                           .view ul{
+
+                          
+                          width:724px;
+                          background: rgb(0, 0, 0);
+                          height: 477px;
+                         margin-top:50px;
+                          position:relative;
+
+                            
+                        }
+
+                        .view ul li{
+
+                            width: 360px;
+                            height:50%;
+                         
+                            text-align:center;
+                            list-style:none;
+                            float:left;
+                            border:1px solid #000;
+
+                        }
+
+                        .view ul li:hover{
+
+                            opacity:0.7;
+                            transition:0.3s;
+                            cursor:pointer;
+                            
+                        }
+
+                        .waterfall-view{
+
+                            background:url("img/waterfall-view.jpg");
+                            background-size:cover;
+
+                        }
+
+                        .wall-view{
+
+                            background:url("img/wall-view.jpg");
+                            background-size:cover;
+
+                        }
+                        .cable-view{
+
+                            background:url("img/cable-view.jpg");
+                            background-size:cover;
+
+                        }
+                        .reservoir-view{
+
+                            background:url("img/reservoir-view.jpg");
+                            background-size:cover;
+
+                        }
+
+
+
+                        /* 景點介紹大綱end */
+
+                        /* 主要介紹str */
+
+                        .main-info{
+
+                            width:800px;
+                           top:1000px;
+                           position: relative;
+                           margin-bottom:100px;
+                         
+                        }
+                        .main-info h2{
+
+                            background:#323232;
+                            height:50px;
+                            color:#FFF;
+                            line-height: 50px;
+                            border-top:5px solid rgb(0, 0, 0);
+                            border-radius:1em;
+                            margin-top:150px;
+                         
+
+
+                        }
+                        .main-info h2::before{
+
+                            content:" ";
+                            margin-left:20px;
+                           
+                        }
+
+                        .main-info p{
+
+                            padding:3%;
+                            margin-top:50px; 
+                        }
+
+                       .main-info img{
+
+                        margin-left:40px;
+                        margin-top:40px;
+                       }
+
+                        
+                        /* 主要介紹end */
+
+
+          /* 中間區域 end */
+
+
+/* ______________rwd____________ */
+
+
+ @media screen and (max-width:1400px){
+
+    .slide-bar{
+
+        width:180px;
+        height:450px;
+        background: red;
+    }
+
+}
+
+
+
+
+    

@@ -375,8 +375,21 @@
     .slide-bar{
 
         width:180px;
-        height:450px;
-        background: red;
+        height:470px;
+        background:#e3e2db;
+    }
+
+    .slide-bar ul li img{
+
+        width:160px;
+        margin-left:10px;
+       
+        
+    }
+    #submit{
+
+        margin-left:20px;
+      
     }
 
 }

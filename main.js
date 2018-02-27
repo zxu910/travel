@@ -1,74 +1,109 @@
 $(document).ready(function(){
 
-    $("#slides img:first").addClass("top");
 
-    var change = function(){
+      // 上方圖片變換str
 
-        var curr = $("#slides img.top");
-        var next = curr.next();
+            $("#slides img:first").addClass("top");
 
-        if( next.length == true){
+            var change = function(){
 
+                var curr = $("#slides img.top");
+                var next = curr.next();
 
-            curr.removeClass("top");
-            next.addClass("top");
-
+                if( next.length == true){
 
 
-        }else{
-
-            var next =$("#slides img:first");
-            curr.removeClass("top");
-            next.addClass("top");
+                    curr.removeClass("top");
+                    next.addClass("top");
 
 
-        }
-    }
 
-     setInterval(change,3000);
+                }else{
 
-    $(window).scroll(function(){
+                    var next =$("#slides img:first");
+                    curr.removeClass("top");
+                    next.addClass("top");
 
-        if($(window).scrollTop()>200 ){
 
-           $(".slide-bar").show(500);
-        }else{
+                }
+            }
 
-            $(".slide-bar").hide(500);
-        }
-    });
+            setInterval(change,3000);
 
-    $(".view > ul > li").click(function(){
+        // 上方圖片變換end
 
-        var to = $(this).attr("title");
+
+      
+
+        // 螢幕下滑右側邊欄顯示str
+
+            $(window).scroll(function(){
+
+                if($(window).scrollTop()>200 ){
+
+                $(".slide-bar").show(500);
+                }else{
+
+                    $(".slide-bar").hide(500);
+                }
+
+                var wdh =$(window).width();
+    
+                if(wdh<900){
+    
+                    $(".slide-bar").hide();
+                }else{
+    
+                    $(".slide-bar").show();
+                }
+            });
 
          
 
-        if( to ==1){
+       // 螢幕下滑右側邊欄顯end
 
-            $("html,body").animate({scrollTop:$("#a").position().top + 2500 + "px"},1000)
+      //  點擊小圖示到對應段落str
 
-        }else if(to ==2){
+            $(".view > ul > li").click(function(){
 
-            $("html,body").animate({scrollTop:$("#b").position().top  + 2500 + "px" },1000)
+                var to = $(this).attr("title");
+
+                
+
+                if( to ==1){
+
+                    $("html,body").animate({scrollTop:$("#a").position().top + 2500 + "px"},1000)
+
+                }else if(to ==2){
+
+                    $("html,body").animate({scrollTop:$("#b").position().top  + 2500 + "px" },1000)
 
 
-        }else if(to ==3){
-            
-            $("html,body").animate({scrollTop:$("#c").position().top  +2500 + "px"},1000)
+                }else if(to ==3){
+                    
+                    $("html,body").animate({scrollTop:$("#c").position().top  +2500 + "px"},1000)
 
 
-        }else {
+                }else {
 
-            $("html,body").animate({scrollTop:$("#d").position().top  + 2500 + "px"},1000)
+                    $("html,body").animate({scrollTop:$("#d").position().top  + 2500 + "px"},1000)
 
 
-        }
+                }
    
     });
 
-    $("#submit").click(function(){
+     //  點擊小圖示到對應段落end
 
-      alert("訊息已送出")
-    });
+     //  儰送出str
+
+
+
+            $("#submit").click(function(){
+
+            alert("訊息已送出")
+            });
+
+    
+    //  儰送出end
 });

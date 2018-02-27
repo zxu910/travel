@@ -22,36 +22,41 @@
 
         nav{
 
-            position: relative;
+           
             width:100%;
             height:100px;
             background:#323232;
             top:0;
             left:0;
             z-index:-3;
+            position: absolute;
+           
 
         }
 
         #nav-bottom{
 
             width:100%;
-            height:30px;
+            height:15px;
+            margin-top:-150px;
             background:#e3e2db;
+            position: absolute;
         }
 
         #logo img{
 
-            width:100px;
-            margin-left:150px;
-            margin-top:5px;
+            width:300px;
+            margin-left:30px;
+            margin-top:15px;
         }
 
-        #logo h4{
+        /* #logo h4{
 
             color:rgb(255, 255, 255);
-            font-size:50px;
-            margin:-95px 0 0 260px;
-        }
+            font-size:35px;
+            margin:0 0 0 160px;
+            z-index:1
+        } */
       
 
         nav ul{
@@ -79,7 +84,13 @@
         top:200px;
         left:0;
         float:left;
-        position:fixed;        }
+        position:fixed;
+        z-index:1;      }
+
+        #left-gif:hover{
+
+            cursor:pointer;
+        }
 
         /* 左側區域 end */
 
@@ -98,6 +109,7 @@
             float:right;
             position:fixed;
             display:none;
+            z-index:2;
            
          
         }
@@ -189,7 +201,8 @@
                             #slides img{
                                 width:800px;
                                 margin:0 auto;
-                                margin-top:-450px;
+                                margin-top:150px;
+                              
                                 position: absolute;
                                 z-index:-2;
                                 display:block;
@@ -209,10 +222,10 @@
 
                         #intro{
 
-                            width:100%;
+                            width:800px;
                             height:500px;
                             position: relative;
-                            top:700px;
+                            top:750px;
                             background: #f6eff0;
 
                         }
@@ -231,9 +244,11 @@
                        div section{
 
                             margin:0 auto;
+                            margin-top:20px;
                             position: absolute;
-                            width:800px;
-                            top:950px;
+                            padding-left:30px;
+                            width:760px;
+                            top:800px;
                             font-size:18pt;
                             line-height: 60px;
                             font-family: 'Noto Sans SC', sans-serif;
@@ -244,7 +259,7 @@
 
                             width:550px;
                             margin-left:400px;
-                            margin-top:-200px;
+                            margin-top:-140px;
                         }
 
                 
@@ -345,7 +360,7 @@
 
                         .main-info{
 
-                            width:800px;
+                            width:100%;
                            top:1000px;
                            position: relative;
                            margin-bottom:100px;
@@ -360,6 +375,7 @@
                             border-top:5px solid rgb(0, 0, 0);
                             border-radius:1em;
                             margin-top:150px;
+                            width:800px;
                          
 
 
@@ -371,10 +387,18 @@
                            
                         }
 
+                        div p{
+
+                            width:500px;
+                        }
+
                         .main-info p{
 
                             padding:3%;
                             margin-top:50px; 
+                            width:700px;
+                            padding-left:50px;
+                            
                         }
 
                        .main-info img{
@@ -414,6 +438,26 @@
         margin-left:20px;
       
     }
+
+}
+
+@media screen and (max-width:1050px){
+
+   #left-gif{
+
+        display:none;
+    }
+    .slide-bar{
+
+        display:none;
+    }
+
+    .main-info{
+
+        width:100%;
+    }
+
+
 
 }
 

@@ -47,15 +47,7 @@ $(document).ready(function(){
                     $(".slide-bar").hide(500);
                 }
 
-                var wdh =$(window).width();
-    
-                if(wdh<900){
-    
-                    $(".slide-bar").hide();
-                }else{
-    
-                    $(".slide-bar").show();
-                }
+             
             });
 
          

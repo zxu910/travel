@@ -87,15 +87,21 @@ $(document).ready(function(){
 
      //  點擊小圖示到對應段落end
 
-     //  儰送出str
+     //  送出str
 
 
 
             $("#submit").click(function(){
 
-            alert("訊息已送出")
+                var way = $('select option:selected').val();
+
+            
+
+            alert("出發! 去" + way +"吧!");
+
+         
             });
 
     
-    //  儰送出end
+    //  送出end
 });
